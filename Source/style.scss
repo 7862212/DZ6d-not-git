@@ -1,0 +1,63 @@
+//@import "_reset.scss";
+
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 14px;
+	color: black;
+	font-weight: 500;
+	font-family: sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.header {}
+
+.main {}
+
+.container {
+	max-width: 1046px;
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: content-box;
+}
+
+.star {
+
+	// .star__container
+	&__container {}
+
+	// .star__pic
+	&__pic {
+		padding: 30px;
+		text-align: center;
+		border: 1px solid black;
+		width: 100%;
+	}
+
+	&__img{
+		background: url(../img/star0.png) no-repeat;
+		width: 80px;
+		height: 85px;
+		display: inline-block;
+	}
+
+	&__img:hover~.star__img:nth-child(-n+1),
+	&__img:hover~.star__img:nth-child(-n+2),
+	&__img:hover~.star__img:nth-child(-n+3),
+	&__img:hover~.star__img:nth-child(-n+4),
+	&__img:hover~.star__img:nth-child(-n+5),
+	&__img:hover~.star__img:nth-child(-n+6),
+	&__img:hover~.star__img:nth-child(-n+7),
+	&__img:hover~.star__img:nth-child(-n+8) {
+		background: url(../img/star1.png) no-repeat;
+		width: 80px;
+		height: 85px;
+	}
+}
+
+
+.footer {}
